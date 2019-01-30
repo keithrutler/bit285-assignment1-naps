@@ -1,0 +1,44 @@
+﻿@model bit285_assignment1_naps.Models.User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<h1>New Account Information</h1>
+<fieldset>
+    <form action="/Naps/Account_Info" method="post">
+        <div>
+            <label asp-for="FirstName">
+                <input placeholder="First Name" name="FirstName" />
+                <span asp-validation-for="FirstName"></span>
+            </label>
+        </div>
+        <div>
+            <label asp-for="LastName">
+                <input placeholder="Last Name" name="LastName" />
+                <span asp-validation-for="LastName"></span>
+            </label>
+        </div>
+        <div>
+            <label asp-for="Email">
+                <input placeholder="Email Address" name="Email" />
+                <span asp-validation-for="Email"></span>
+            </label>
+        </div>
+        <div>
+            <label>
+                <select asp-for="Program" name="Program">
+                    <option selected disabled>Program</option>
+                    <option>Web App Dev</option>
+                    <option>Mobile App Dev</option>
+                    <option>Front-end Dev</option>
+                </select>
+                <span asp-validation-for="Program"></span>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Create Password" />
+            <input type="button"  onclick='history.go(0)', value="Reset" />
+        </div>
+    </form>
+</fieldset>

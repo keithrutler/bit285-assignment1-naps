@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Views\Naps\Account_Info.cshtml" />
+    <None Include="Views\Naps\Confirm_Account.cshtml" />
+    <None Include="Views\Naps\Login.cshtml" />
+    <None Include="Views\Naps\Password_Info.cshtml" />
+    <None Include="Views\Naps\Select_Password.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>

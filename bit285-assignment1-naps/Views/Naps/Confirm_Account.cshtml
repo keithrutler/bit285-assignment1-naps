@@ -1,11 +1,8 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/naps.css" />
-    <title>Account Confirmation</title>
-</head>
-<body>
+﻿@model bit285_assignment1_naps.Models.User
+@{
+    Layout = "_Layout";
+}
+
     <h1>New Account Created</h1>
     <fieldset>
         <form>
@@ -29,11 +26,8 @@
                 <span>bl-blue-Bansenauer</span>
             </div>
             <div>
-                <input type="button" onclick="location.href='/login.html';" value="Go to Login" />
+                <input type="button" onclick="location.href='/Login.html';" value="Go to Login" />
                 <input type="button" value="Reset" />
             </div>
         </form>
     </fieldset>
-
-</body>
-</html>
